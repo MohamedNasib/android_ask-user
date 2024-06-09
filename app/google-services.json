@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "535988168117",
+    "firebase_url": "https://askhail.firebaseio.com",
+    "project_id": "askhail",
+    "storage_bucket": "askhail.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:535988168117:android:e6d3616a10669f346925fc",
+        "android_client_info": {
+          "package_name": "com.wesal.askhail"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "535988168117-b7pb9mtvifsv15u9c3asm7coh55k19nf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1IawCLGZnrrntKxUdN9ZHTPWfaAJdNmo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "535988168117-b7pb9mtvifsv15u9c3asm7coh55k19nf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "535988168117-88ftmfsf6kdea0k4oui2fhe5cms61hol.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.wesal.askHail",
+                "app_store_id": "1542462594"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:535988168117:android:8bb376e279a9b5ab6925fc",
+        "android_client_info": {
+          "package_name": "com.wesal.askhailbusiness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "535988168117-b7pb9mtvifsv15u9c3asm7coh55k19nf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1IawCLGZnrrntKxUdN9ZHTPWfaAJdNmo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "535988168117-b7pb9mtvifsv15u9c3asm7coh55k19nf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "535988168117-88ftmfsf6kdea0k4oui2fhe5cms61hol.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.wesal.askHail",
+                "app_store_id": "1542462594"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

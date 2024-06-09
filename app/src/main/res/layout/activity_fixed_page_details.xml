@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorStatusBar"
+    android:layout_height="match_parent"
+    tools:context=".features.more.fixedPageDetails.FixedPageDetailsActivity">
+
+    <include android:id="@+id/viewToolBar" layout="@layout/my_toolbar_elevation" />
+    <include
+        layout="@layout/z_status_common"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewToolBar" />
+    <FrameLayout
+        android:id="@+id/viewContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewToolBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tvFixedInfo"
+                    android:padding="@dimen/_16dp"
+                    android:lineSpacingExtra="@dimen/_8dp"
+                    android:textStyle="normal"
+                    android:textSize="@dimen/_16sp"
+                    android:textColor="@color/colorTextPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/btnConfirm"
+                    style="@style/btnPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_16dp"
+                    android:text="@string/register" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+     </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp"
+    android:background="@drawable/dialog_bg_round"
+    android:layout_height="match_parent">
+    <TextView
+        android:textStyle="bold"
+        android:textSize="@dimen/_16sp"
+        android:textColor="@color/colorTextPrimary"
+        android:padding="@dimen/_8dp"
+        android:gravity="center"
+        android:text="@string/search_with_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.google.android.material.textfield.TextInputLayout
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/tilComment"
+        style="@style/Widget.AppTheme.TextInputLayoutList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/search_with_name"
+        app:helperText="  "
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tieComment"
+            style="@style/TextInputEditTextStyle"
+            android:layout_width="match_parent"
+            android:maxLength="20"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_8dp"
+        android:layout_height="wrap_content"
+        android:text="@string/search"
+        style="@style/btnPrimary"/>
+</LinearLayout>

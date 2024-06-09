@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorStatusBar"
+    tools:context=".features.login.LoginActivity">
+    <include
+        android:id="@+id/viewIncludedToolbar"
+        layout="@layout/my_toolbar_simple"/>
+    <LinearLayout
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewIncludedToolbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/view"
+        android:layout_margin="@dimen/_12dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="@dimen/_16dp"
+            android:textSize="@dimen/_24sp"
+            android:textColor="@color/colorTextPrimary"
+            android:textStyle="bold"
+            android:text="@string/login_exist_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginTop="@dimen/_8dp"
+            android:textStyle="normal"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/_14sp"
+            android:text="@string/type_account_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="@dimen/_16dp"
+            android:id="@+id/tilPhone"
+            style="@style/Widget.AppTheme.TextInputLayoutList"
+            android:layout_width="match_parent"
+            app:startIconDrawable="@drawable/ic_phone"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            app:endIconDrawable="@drawable/ic_prefix_phone"
+            app:endIconMode="custom"
+            app:helperText="  "
+            android:hint="@string/phone_number">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiePhone"
+                android:inputType="phone"
+
+                style="@style/TextInputEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilPassword"
+            style="@style/Widget.AppTheme.TextInputLayoutList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/ic_password"
+            app:endIconMode="password_toggle"
+            android:layout_marginEnd="12dp"
+            app:helperText="  "
+            android:hint="@string/password">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiePassword"
+                android:inputType="textPassword"
+                style="@style/TextInputEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <View
+            android:layout_weight="1"
+            android:layout_width="@dimen/_1dp"
+            android:layout_height="0dp"/>
+        <TextView
+            android:id="@+id/tvForgetPassword"
+            android:gravity="center"
+            android:textSize="@dimen/_14sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorTextPrimary"
+            android:text="@string/forget_password"
+            android:padding="@dimen/_16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/_16dp"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            style="@style/btnPrimary"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

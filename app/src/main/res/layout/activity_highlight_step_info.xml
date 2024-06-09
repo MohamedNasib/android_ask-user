@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorStatusBar"
+    android:layout_height="match_parent"
+    tools:context=".features.highlightAdvert.highlightStepInfo.HighlightStepInfoActivity">
+    <include
+        android:id="@+id/viewIncludedToolbar"
+        layout="@layout/my_toolbar_elevation"/>
+    <include
+        layout="@layout/z_status_common"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewIncludedToolbar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        />
+    <FrameLayout
+        android:id="@+id/viewContainer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewIncludedToolbar"
+        android:layout_width="0dp"
+        android:layout_height="0dp">
+       <androidx.core.widget.NestedScrollView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <LinearLayout
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <ImageView
+                   android:id="@+id/ivHighlightImage"
+                   android:src="@drawable/test_image"
+                   android:scaleType="centerCrop"
+                   android:layout_width="match_parent"
+                   android:layout_height="210dp"/>
+
+               <TextView
+                   android:id="@+id/tvDes"
+                   android:layout_margin="@dimen/_16dp"
+                   android:textSize="@dimen/_18sp"
+                   android:textColor="@color/colorTextPrimary"
+                   android:text="يضمن تمييز إعلانك نسبة نجاح أكبر مع
+المستخدمين حيث يظهر الإعلان دائماً على
+رأس الصفحة المعروض بها"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+
+               <androidx.recyclerview.widget.RecyclerView
+                   android:id="@+id/rvHighlight"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="@dimen/_16dp"
+                   android:layout_marginEnd="@dimen/_16dp"
+                   tools:itemCount="3"
+                   tools:listitem="@layout/row_highlight" />
+
+               <TextView
+                   android:layout_marginTop="@dimen/_16dp"
+                   android:layout_marginBottom="@dimen/_8dp"
+                   android:layout_marginStart="@dimen/_16dp"
+                   android:layout_marginEnd="@dimen/_16dp"
+                   android:textSize="@dimen/_18sp"
+                    android:textColor="@color/colorTextPrimary"
+                   android:text="@string/where_to_put_advert"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+               <com.google.android.material.textfield.TextInputLayout
+
+                   android:layout_marginStart="@dimen/_16dp"
+                   android:layout_marginEnd="@dimen/_16dp"
+                   android:layout_marginTop="@dimen/_8dp"
+                   android:id="@+id/tilAdvertPlace"
+                   style="@style/Widget.AppTheme.TextInputLayoutList"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   app:helperText="  "
+                   app:endIconDrawable="@drawable/ic_arrow_down"
+                   app:endIconTint="@color/colorTextPrimary"
+                   app:endIconMode="custom"
+                   android:hint="@string/advert_place">
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:id="@+id/tieAdvertPlace"
+                       android:maxLines="1"
+                       android:gravity="start"
+                       android:clickable="true"
+                       android:focusable="false"
+                       style="@style/TextInputEditTextStyle"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content" />
+               </com.google.android.material.textfield.TextInputLayout>
+               <Button
+                   android:id="@+id/btnConfirmNext"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   android:text="@string/next"
+                   style="@style/btnPrimary"
+                   android:layout_margin="@dimen/_32dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+           </LinearLayout>
+       </androidx.core.widget.NestedScrollView>
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

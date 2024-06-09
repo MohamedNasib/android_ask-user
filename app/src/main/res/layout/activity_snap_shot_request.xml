@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".features.snapShotRequest.SnapShotRequestActivity">
+    <include android:id="@+id/viewToolBar" layout="@layout/my_toolbar_elevation" />
+    <include
+        layout="@layout/z_status_common"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewToolBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+    <FrameLayout
+        android:id="@+id/viewContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewToolBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvJobName"
+                    android:textColor="@color/colorTextPrimary"
+                    android:layout_margin="@dimen/_16dp"
+                    android:textSize="@dimen/_16sp"
+                    android:textStyle="bold"
+                    android:text="@string/shot_request"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tvJobDescription"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:textSize="@dimen/_16sp"
+                    android:text="@string/jointeaminfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/full_address"
+                    android:textSize="@dimen/_14sp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/_24dp"
+                    android:layout_marginLeft="@dimen/_4dp"
+                    />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilAddress"
+                    android:layout_marginTop="20dp"
+                    style="@style/Widget.AppTheme.TextInputLayoutList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tieAddress"
+                        android:minLines="4"
+                        android:maxLines="4"
+                        android:gravity="start"
+                        android:background="@drawable/textinput_edit_text_style_background"
+                        style="@style/TextInputEditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/full_address"
+                    android:textSize="@dimen/_14sp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/_24dp"
+                    android:layout_marginLeft="@dimen/_4dp"
+                    />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginStart="@dimen/_2dp"
+                    android:id="@+id/tilBuildingStatus"
+                    style="@style/Widget.AppTheme.TextInputLayoutList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:endIconDrawable="@drawable/ic_down_arrow"
+                    app:endIconTint="@color/colorAccent"
+                    app:endIconMode="custom"
+                    app:startIconTint="@color/colorAccent"
+                    app:startIconDrawable="@drawable/ic_bank"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tieBuildingStatus"
+                        android:maxLines="1"
+                        android:gravity="start"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/textinput_edit_text_style_background"
+                        style="@style/TextInputEditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fullname"
+                    android:textSize="@dimen/_14sp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/_12dp"
+                    />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilFullName"
+                    style="@style/Widget.AppTheme.TextInputLayoutList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tieFullName"
+                        style="@style/TextInputEditTextStyle"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/textinput_edit_text_style_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phone_number"
+                    android:textSize="@dimen/_14sp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/_16dp"
+                    />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilPhone"
+                    style="@style/Widget.AppTheme.TextInputLayoutList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:endIconMode="custom"
+                    android:layout_marginTop="@dimen/_8dp"
+                   >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tiePhone"
+                        android:inputType="phone"
+                        android:background="@drawable/textinput_edit_text_style_background"
+                        style="@style/TextInputEditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/visit_date"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/_12sp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/visittime"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/_12sp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_marginEnd="@dimen/_4dp"
+                        android:id="@+id/tilDate"
+                        style="@style/Widget.AppTheme.TextInputLayoutList"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        app:helperText="  "
+                        app:endIconMode="custom"
+                        app:startIconTint="@color/colorAccent"
+                        app:startIconDrawable="@drawable/ic_calender"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tieDate"
+                            android:maxLines="1"
+                            android:gravity="start"
+                            android:clickable="true"
+                            android:focusable="false"
+                            android:background="@drawable/textinput_edit_text_style_background"
+                            style="@style/TextInputEditTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_marginStart="@dimen/_4dp"
+                        android:id="@+id/tilTime"
+                        style="@style/Widget.AppTheme.TextInputLayoutList"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        app:endIconMode="custom"
+                        app:startIconTint="@color/colorAccent"
+                        app:startIconDrawable="@drawable/ic_clock"
+                        >
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tieTime"
+                            android:maxLines="1"
+                            android:gravity="start"
+                            android:clickable="true"
+                            android:focusable="false"
+                            android:background="@drawable/textinput_edit_text_style_background"
+                            style="@style/TextInputEditTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <Button
+                    android:layout_gravity="center"
+                    android:id="@+id/btnCont"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:text="@string/send"
+                    style="@style/btnPrimary"
+                    android:layout_margin="48dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

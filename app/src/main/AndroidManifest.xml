@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".features.confimPhone.savemember.SaveMember"
+            android:exported="false" />
+        <activity
+            android:name=".features.TermsandConditions.TermsandConditions"
+            android:exported="false" />
+        <activity
+            android:name=".HailPolicyActivity"
+            android:exported="false" />
+        <activity android:name=".features.visitorLogin.VisitorLoginActivity" />
+        <activity android:name=".features.advertRates.AdvertRatesActivity" />
+        <activity android:name=".features.askComments.AskCommentsActivity" />
+        <activity android:name=".features.orderComments.OrderCommentsActivity" />
+        <activity android:name=".features.advertComments.AdvertCommentsActivity" />
+        <activity android:name=".features.chatActivity.ChatActivity" />
+        <activity android:name=".features.videoPlayer.VideoPlayerActivity" />
+        <activity android:name=".features.myPackageSteps.updateSelectPackage.UpdateSelectPackageActivity" />
+        <activity android:name=".features.myPackageSteps.myPackage.MyPackageActivity" />
+        <activity android:name=".features.changePassword.ChangePasswordActivity" />
+        <activity android:name=".features.editInfo.EditInfoActivity" />
+        <activity android:name=".features.myInfo.MyInfoActivity" />
+        <activity android:name=".features.myQuestion.MyQuestionsActivity" />
+        <activity android:name=".features.notifications.NotificationsActivity" />
+        <activity android:name=".features.advertHighlightStatus.AdvertHighlightStatusActivity" />
+        <activity android:name=".features.myOrders.MyOrdersActivity" />
+        <activity android:name=".features.inactiveAdvertList.InactiveAdvertListActivity" />
+        <activity android:name=".features.highlightAdvert.highlightStepSInfoBank.HighlightStepSInfoBankActivity" />
+        <activity android:name=".features.highlightAdvert.highlightStepSelectBank.HighlightStepSelectBankActivity" />
+        <activity android:name=".features.highlightAdvert.highlightStepSelectType.HighlightStepSelectTypeActivity" />
+        <activity android:name=".features.highlightAdvert.highlightStepPackages.HighlightStepPackagesActivity" />
+        <activity android:name=".features.highlightAdvert.highlightStepInfo.HighlightStepInfoActivity" />
+        <activity android:name=".features.myAdverts.MyAdvertsActivity" />
+        <activity android:name=".features.favouritesAdvert.FavouritesAdvertActivity" />
+        <activity android:name=".features.myAccount.MyAccountActivity" android:theme="@style/AppTheme" />
+        <activity android:name=".features.specialAdvertsList.SpecialAdvertsListActivity" />
+        <activity android:name=".features.prayAndWeather.PrayAndWeatherActivity" />
+        <activity android:name=".features.snapShotRequest.SnapShotRequestActivity" />
+        <activity android:name=".features.workApply.WorkApplyActivity" />
+        <activity android:name=".features.workWithUs.WorkWithUsActivity" />
+        <activity android:name=".features.settings.SettingsActivity" />
+        <activity android:name=".features.services.ServicesActivity" />
+        <activity android:name=".features.aboutApp.AboutAppActivity" />
+        <activity android:name=".features.more.fixedPageDetails.FixedPageDetailsActivity" />
+        <activity
+            android:name=".features.askHailDetails.AskHailDetailsActivity"
+            android:parentActivityName=".features.main.MainActivity" />
+        <activity android:name=".features.createAskHail.createAskHailStepDetails.CreateAskHailStepDetailsActivity" />
+        <activity android:name=".features.createAskHail.createAskHailStepMedia.CreateAskHailStepMediaActivity" />
+        <activity android:name=".features.createAskHail.createAskHailStepInfo.CreateAskHailStepInfoActivity" />
+        <activity
+            android:name=".features.orderDetails.OrderDetailsActivity"
+            android:parentActivityName=".features.main.MainActivity" />
+        <activity android:name=".features.createOrderSteps.createOrderStepContact.CreateOrderStepContactActivity" />
+        <activity android:name=".features.createOrderSteps.createOrderStepSpecification.CreateOrderStepSpecificationActivity" />
+        <activity android:name=".features.createOrderSteps.createOrderStepSection.CreateOrderStepSectionActivity" />
+        <activity android:name=".features.createOrderSteps.createAdvertStepInfo.CreateOrderStepInfoActivity" />
+        <activity android:name=".features.createAdvertSteps.createAdvertStepContact.CreateAdvertStepContactActivity" />
+        <activity android:name=".features.pickLocation.PickLocationActivity" />
+        <activity android:name=".features.createAdvertSteps.createAdvertStepSpecification.CreateAdvertStepSpecificationActivity" />
+        <activity android:name=".features.createAdvertSteps.createAdvertStepMedia.CreateAdvertStepMediaActivity" />
+        <activity android:name=".features.paymentWebView.PaymentWebViewActivity" />
+        <activity android:name=".features.createAdvertSteps.createAdvertStepSection.CreateAdvertStepSectionActivity" />
+        <activity android:name=".features.payPackage.payPackageStepSInfoBank.PayPackageStepSInfoBankActivity" />
+        <activity android:name=".features.payPackage.payPackageStepSelectBank.PayPackageStepSelectBankActivity" />
+        <activity android:name=".features.payPackage.payPackageStepSelectType.PayPackageStepSelectTypeActivity" />
+        <activity android:name=".features.createAdvertSteps.createAdvertStepPackage.CreateAdvertStepPackageActivity" />
+        <activity android:name=".features.createAdvertSteps.createAdvertStepInfo.CreateAdvertStepInfoActivity" />
+        <activity android:name=".features.adverterpage.AdverterPageActivity" />
+        <activity android:name=".features.createAdvertSteps.createAdvertStepSocial.CreateAdvertStepSocialtActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".features.advertsOnMap.AdvertOnMapActivity"
+            android:label="@string/title_activity_advert_on_map" />
+        <activity
+            android:name=".features.advertDetails.AdvertDetailsActivity"
+            android:parentActivityName=".features.main.MainActivity" />
+        <activity android:name=".features.subSectionsItems.SubSectionItemsActivity" />
+        <activity android:name=".features.subSections.SubSectionsActivity" />
+        <activity android:name=".features.main.MainActivity" />
+        <activity android:name=".core.successPage.SuccessPageActivity" />
+        <activity android:name=".features.register.RegisterActivity" />
+        <activity android:name=".features.resetPassword.ResetPasswordActivity" />
+        <activity android:name=".features.confimPhone.ConfirmPhoneActivity" />
+        <activity android:name=".features.typePhone.TypePhoneActivity" />
+        <activity android:name=".features.login.LoginActivity" />
+        <activity android:name=".features.browsingType.BrowsingTypeActivity" />
+        <activity android:name=".features.contactUs.ContactUsActivity" />
+        <activity
+            android:name=".features.splash.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".core.firebase.MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notification_logo" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorTextPrimary" />
+    </application>
+
+</manifest>

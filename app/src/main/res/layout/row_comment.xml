@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_4dp"
+        android:layout_marginBottom="@dimen/_4dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvCommenterName"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12sp"
+            android:alpha=".5"
+            android:textColor="@color/colorTextPrimary"
+            tools:text="...نايف يقول"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+        <TextView
+            android:id="@+id/tvCommentDate"
+            android:textSize="@dimen/_12sp"
+            android:alpha=".5"
+            android:textColor="@color/colorTextPrimary"
+            tools:text="...asd يقول"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_4dp"
+        android:layout_marginBottom="@dimen/_4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvComment"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/_16sp"
+            tools:text="كيف ضمانات المرافق؟ السباكة والكهرباء"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textAlignment="viewStart"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/ivReplay"
+            android:padding="@dimen/_2dp"
+            android:src="@drawable/ic_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/viewReplay"
+        android:layout_marginTop="@dimen/_4dp"
+        android:layout_marginBottom="@dimen/_4dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+             android:textStyle="bold"
+            android:textSize="@dimen/_12sp"
+            android:textColor="@color/colorInputUnderLine"
+            android:text="@string/replayerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+        <TextView
+            android:id="@+id/tvReplayDate"
+            android:textSize="@dimen/_12sp"
+            android:alpha=".5"
+            android:textColor="@color/colorTextPrimary"
+            tools:text="...نايف يقول"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvReplay"
+        android:layout_marginTop="@dimen/_4dp"
+        android:layout_marginBottom="@dimen/_4dp"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="@dimen/_16sp"
+        tools:text="كيف ضمانات المرافق؟ السباكة والكهرباء"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvDeleteComment"
+        android:textStyle="bold"
+        android:textColor="@color/colorInputError"
+        android:textSize="@dimen/_14sp"
+        android:text="@string/delete_comment"
+        android:layout_marginBottom="@dimen/_4dp"
+        android:layout_marginTop="@dimen/_4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

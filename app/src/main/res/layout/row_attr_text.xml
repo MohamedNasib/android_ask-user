@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginStart="@dimen/_2dp"
+        android:layout_marginEnd="@dimen/_2dp"
+        android:id="@+id/tilAdvertAttrTyping"
+        style="@style/Widget.AppTheme.TextInputLayoutList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:helperText="  "
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tieAdvertAttrTyping"
+            android:maxLines="1"
+            android:gravity="start"
+            android:inputType="textPersonName"
+            style="@style/TextInputEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</FrameLayout>

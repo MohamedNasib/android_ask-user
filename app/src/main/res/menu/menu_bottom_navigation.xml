@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/_ic_home"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/nav_messages"
+        android:icon="@drawable/ic_message_circle"
+        android:title="@string/messages" />
+    <item
+        android:id="@+id/nav_null"
+        android:icon="@null"
+        android:title="@string/advertise_with_us" />
+
+    <item
+        android:id="@+id/nav_ask"
+        android:icon="@drawable/ic_gray_qus"
+        android:title="@string/ask_hail" />
+
+    <item
+        android:id="@+id/nav_more"
+        android:icon="@drawable/_ic_more"
+        android:title="@string/more" />
+
+</menu>

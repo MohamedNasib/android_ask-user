@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:orientation="vertical"
+     android:layout_margin="@dimen/_8dp"
+    app:cardElevation="@dimen/_1dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/_1dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical"
+        android:layout_margin="@dimen/_8dp"
+        android:padding="@dimen/_12dp"
+        android:elevation="@dimen/_8dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:tools="http://schemas.android.com/tools">
+        <LinearLayout
+            android:layout_marginTop="@dimen/_4dp"
+            android:layout_marginBottom="@dimen/_4dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvOrderMakerName"
+                android:textStyle="bold"
+                android:textSize="@dimen/_12sp"
+                android:alpha=".5"
+                android:textColor="@color/colorTextPrimary"
+                tools:text="...نايف يقول"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <View
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="1dp"/>
+            <TextView
+                android:id="@+id/tvOrderDate"
+                android:textSize="@dimen/_12sp"
+                android:alpha=".5"
+                android:textColor="@color/colorTextPrimary"
+                tools:text="...asd يقول"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvOrderDetails"
+            android:layout_marginTop="@dimen/_4dp"
+            android:layout_marginBottom="@dimen/_4dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/_16sp"
+            tools:text="كيف ضمانات المرافق؟ السباكة والكهرباء"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <View
+            android:background="@color/colorLine"
+            android:id="@+id/viewReplay"
+            android:layout_marginTop="@dimen/_4dp"
+            android:layout_marginBottom="@dimen/_4dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:layout_marginTop="@dimen/_8dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvOrderPrice"
+                android:textColor="@color/colorInputUnderLine"
+                android:textSize="@dimen/_14sp"
+                android:textStyle="bold"
+                android:text="أقل من 100,000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <View
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="1dp"/>
+            <TextView
+                android:padding="@dimen/_8dp"
+                android:background="#E1F8FD"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/_12sp"
+                android:id="@+id/tvIsNew"
+                android:text="@string/new_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="myToolbar" type="id"/>
+    <item name="viewContainer" type="id"/>
+    <item name="viewLoading" type="id"/>
+<!--    <item name="viewStatus" type="id"/>-->
+<!--    <item name="ivStatusImage" type="id"/>-->
+<!--    <item name="tvStatusText" type="id"/>-->
+<!--    <item name="tvStatusMainText" type="id"/>-->
+<!--    <item name="btnTryAgain" type="id"/>-->
+</resources>

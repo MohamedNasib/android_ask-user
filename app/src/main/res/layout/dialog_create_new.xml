@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp"
+    android:background="@drawable/dialog_bg_round_white"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_marginTop="@dimen/_16dp"
+        android:textColor="@color/colorBlack"
+        android:padding="@dimen/_8dp"
+        android:gravity="center"
+        android:textSize="@dimen/_24sp"
+        android:textStyle="bold"
+        android:text="@string/new_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_marginTop="@dimen/_16dp"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <FrameLayout
+                android:id="@+id/viewAddAdvert"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="1"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_megaphone_large"
+                        android:layout_gravity="center"
+                        />
+
+                    <TextView
+                        android:padding="@dimen/_8dp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_16sp"
+                        android:layout_marginTop="@dimen/_12dp"
+                        android:textColor="@color/colorBlack"
+                        android:text="@string/advert"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+            <View
+
+                android:alpha=".5"
+                android:background="@color/colorTextPrimary"
+                android:layout_width="@dimen/_1dp"
+                android:visibility="gone"
+                android:layout_height="match_parent"/>
+            <FrameLayout
+                android:id="@+id/viewAddOrder"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:padding="@dimen/_8dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_16sp"
+                    android:textColor="@color/colorTextPrimary"
+                    android:text="@string/order"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:visibility="gone"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="1"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_shopping_bag_large"
+                        android:layout_gravity="center"
+                        />
+                    <TextView
+                        android:padding="@dimen/_8dp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_16sp"
+                        android:textColor="@color/colorBlack"
+                        android:text="@string/question"
+                        android:layout_marginTop="@dimen/_12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/viewAddQuestion"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="1"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_cir_qus"
+                        android:layout_gravity="center"
+                        />
+                    <TextView
+                        android:padding="@dimen/_8dp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_16sp"
+                        android:textColor="@color/colorBlack"
+                        android:text="@string/question"
+                        android:layout_marginTop="@dimen/_12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>
